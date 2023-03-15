@@ -5,56 +5,57 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JS Workouts</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <script src="script.js"></script>
-        <div>
-            <div class="title">
-                <h3>JavaScript Workouts</h3>
-            </div>
+        <div class="title">
+            <h3>JavaScript Workouts</h3>
+        </div>
+        <div class="container">
             <div class="oddeven">
-                <label>ODD or EVEN :</label>
+                <label class="label">ODD or EVEN :</label>
                 <input type="text" placeholder="Enter your Number" id="oddeven">
                 <button onclick="return oddeven()" type="submit">Check</button>
-                <p id="oddevenout"></p>
+                <p class="out" id="oddevenout"></p>
             </div>
             <div class="prime">
-                <label>Prime or not :</label>
+                <label class="label">Prime or not :</label>
                 <input type="text" placeholder="Enter your Number" id="prime">
                 <button onclick="return prime()" type="submit">Check</button>
-                <p id="primeout"></p>
+                <p class="out" id="primeout"></p>
             </div>
             <div class="fibon">
-                <label>fibonacci series :</label>
+                <label class="label">fibonacci series :</label>
                 <input type="text" placeholder="Enter your Number" id="fibon">
                 <button onclick="return fibon()" type="submit">Check</button>
-                <p id="fibonout"></p>
+                <p class="out" id="fibonout"></p>
             </div>
             <div class="sum">
-                <label>Sum and Average :</label>
-                <button onclick="return sum()" type="submit">Check</button> <p>Click check to view the output</p>
-                
+                <label class="label">Sum and Average :</label>
+                <button onclick="return sum()" type="submit">Check</button>
+                <p>Click check to view the output</p>
             </div>
             <div class="pattern1">
-                <label>Pattern 1 :</label>
+                <label class="label">Pattern 1 :</label>
                 <input type="text" placeholder="Enter your Number" id="pattern1">
                 <button onclick="return pattern1()" type="submit">Check</button>
                 <p>This out can view in Console</p>
             </div>
             <div class="pattern2">
-                <label>Pattern 2 :</label>
+                <label class="label">Pattern 2 :</label>
                 <input type="text" placeholder="Enter your Number" id="pattern2">
                 <button onclick="return pattern2()" type="submit">Check</button>
                 <p>This out can view in Console</p>
             </div>
             <div class="pattern3">
-                <label>Pattern 3 :</label>
+                <label class="label">Pattern 3 :</label>
                 <input type="text" placeholder="Enter your Number" id="pattern3">
                 <button onclick="return pattern3()" type="submit">Check</button>
                 <p>This out can view in Console</p>
             </div>
             <div class="pattern4">
-                <label>Pattern 4 :</label>
+                <label class="label">Pattern 4 :</label>
                 <input type="text" placeholder="Enter your Number" id="pattern4">
                 <button onclick="return pattern4()" type="submit">Check</button>
                 <p>This out can view in Console</p>
