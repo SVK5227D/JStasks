@@ -20,20 +20,20 @@ function prime() {
     //Getting value from the input field
     let value1 = document.getElementById("prime").value;
     var empty = true;
-
+    debugger;
     for (i = 2; i < value1; i++) {
+
         if (value1 % i == 0) {
             empty = false;
             break;
         }
+    }
+    if (empty == true) {
+        document.getElementById("primeout").innerHTML = (value1 + " is a Prime Number");
+    }
+    else {
+        document.getElementById("primeout").innerHTML = (value1 + " is not a Prime Number");
 
-        if (empty == true) {
-            document.getElementById("primeout").innerHTML = (value1 + " is a Prime Number");
-        }
-        else {
-            document.getElementById("primeout").innerHTML = (value1 + " is not a Prime Number");
-
-        }
     }
 }
 
@@ -91,12 +91,12 @@ function pattern1() {
     console.log(string);
 }
 
-function pattern2(){
+function pattern2() {
     let value5 = document.getElementById("pattern2").value;
     let string2 = "";
     let count = 1;
-    for(let i = 1 ; i<=value5;i++){
-        for(let j = 1 ; j<=i ; j++){
+    for (let i = 1; i <= value5; i++) {
+        for (let j = 1; j <= i; j++) {
             string2 += count;
             count++;
         }
@@ -105,11 +105,11 @@ function pattern2(){
     console.log(string2);
 }
 
-function pattern3(){
+function pattern3() {
     let value6 = document.getElementById("pattern3").value;
     let string3 = "";
-    for(let i = 1 ; i<=value6;i++){
-        for(let j = 1 ; j<=i ; j++){
+    for (let i = 1; i <= value6; i++) {
+        for (let j = 1; j <= i; j++) {
             string3 += '*';
         }
         string3 += "\n";
@@ -117,18 +117,18 @@ function pattern3(){
     console.log(string3);
 }
 
-function pattern4(){
+function pattern4() {
     let value7 = document.getElementById("pattern4").value;
     let string4 = "";
-    for(let i = 1 ;i<=value7;i++){
+    for (let i = 1; i <= value7; i++) {
         let z = value7 - i;
-        for(let j=1; j <= z ;j++){
+        for (let j = 1; j <= z; j++) {
             string4 += " ";
         }
-        for(let k = 1;k<=i;k++){
+        for (let k = 1; k <= i; k++) {
             string4 += "*";
         }
-        string4 +="\n";
+        string4 += "\n";
     }
     console.log(string4);
 }
