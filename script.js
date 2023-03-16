@@ -62,6 +62,8 @@ function fibon() {
 
 }
 
+//Sum of an array and average of array
+
 function sum() {
 
     let value3 = [2, -9, 0, 5, 12, -25, 22, 9, 8, 12];
